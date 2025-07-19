@@ -147,7 +147,8 @@ const MenuPage = () => {
                 <Link href="/" className="hover:text-primary-700 transition-colors duration-300">
                   Home
                 </Link>
-                <span className="mx-3">></span>
+                <span className="mx-3">{'>'}</span>
+
                 <span className="text-primary-700">Menu</span>
               </nav>
             </motion.div>
