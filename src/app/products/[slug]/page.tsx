@@ -310,6 +310,13 @@ const ProductPage = ({ params }: ProductPageProps) => {
       </div>
     </main>
   )
+// This tells Next.js to statically generate product pages
+export async function generateStaticParams() {
+  return Object.keys(products).map((slug) => ({
+    slug
+  }))
+}
+
 }
 
 export default ProductPage
